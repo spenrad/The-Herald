@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
     newsArticles: function(search, date) {
-        return axios.get("https://newsapi.org/v2/everything?qInTitle=" + search + date +"&language=en&sortBy=popularity&apiKey=0e220e65f7324225a3a82a01eef04123")
+        return axios.get("/api/newsArticles", search, date)
     },
 
     newsArticlesProfile: function(search) {

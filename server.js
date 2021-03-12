@@ -12,7 +12,7 @@ app.use(express.json());
 mongoose.set('useFindAndModify', false);
 
 
-// middleware that allows the react server and the backend server to exchange information, can be removed or commented out when in production
+// // middleware that allows the react server and the backend server to exchange information, can be removed or commented out when in production
 // app.use(function (req, res, next) {
 
 //   // Website you wish to allow to connect
