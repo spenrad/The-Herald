@@ -11,24 +11,16 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
   });
 
   useEffect(() => {
-    // console.log("API", API);
     API.authUser().then(function (res) {
-        console.log("logged in, t/f???", res.data)
-      // console.log("are you logged in???", res.data)
+        // console.log("logged in, t/f???", res.data)
       setLoggedIn(res.data);
     });
   }, [loggedIn]);
   
-
   return (
-    // Show the component only when the user is logged in
-    // Otherwise, redirect the user to /signin page
-    <Route
-      {...rest}
-      render={(props) =>
-        loggedIn ? <Component {...props} /> : <NotAuth />
-      }
-    />
+    // Show the component and its props only when the user is logged in
+    // Otherwise, send user to NotAuth Page
+    <Route {...rest} render={(props) => loggedIn ? <Component {...props} /> : <NotAuth />} />
   );
 };
 

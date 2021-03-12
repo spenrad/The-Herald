@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default {
+  
   newsArticles: function (search, date) {
     return axios
       .post("/api/newsArticles", {search, date})
@@ -11,7 +12,6 @@ export default {
       .post("/api/newsArticlesProfile", {search})
   },
 
-  // NOTE: axios routes are for development only, add a ternary statement or update once in production
   registerUser: function (info) {
     return axios.post("/api/signup", info);
   },

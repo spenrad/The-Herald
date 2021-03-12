@@ -14,7 +14,6 @@ function Signup() {
       username: registerUsername,
       password: registerPassword,
     }).then(() => {
-      // console.log("go to login")
       history.push("/login");
     });
   };

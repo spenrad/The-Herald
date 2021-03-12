@@ -32,16 +32,10 @@ function MapPage() {
 
   useEffect(function () {
     API.newsArticles(currentCountry, date).then(function (res) {
-      // console.log("news articles", res.data.articles);
       let data = res.data.articles;
-      // console.log("ARTICLES", data)
       articleSet(data);
     });
   }, [date]);
-
-  // console.log("ARTICLES STATE", articles);
-  // console.log("COUNTRY STATE", currentCountry);
-
 
   return (
     <div>

@@ -1,16 +1,13 @@
-# Herald
-Herald is a news hub / aggregator that allows users to pull the latest articles based on geo-political locations.
+Herald
+====
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Herald is Full-Stack MERN application that functions as a news aggregator allowing users to view the latest articles from around the world by way of traversing an interactive map.
 
 ![Site](/client/public/assets/Site-Image.png)
+[Visit Deployed Site](https://herald-worldnews.herokuapp.com/)
 
-## Table of Contents
-
-|                                     |                                         |                                         |
-| :---------------------------------- | :-------------------------------------- | :-------------------------------------- |
-| [Project Introduction](#Herald)     | [Table of Contents](#table-of-contents) | [Demo](#Demo)                           |
-| [Technologies](#technologies)       | [Deployed Link](#deployed-link)         | [Authors](#authors)                     |
-| [Acknowledgments](#acknowledgments) | [License](#license)                     |
----
+----
 
 ## Demo
 
@@ -32,37 +29,23 @@ Herald is a news hub / aggregator that allows users to pull the latest articles 
 * [NewsAPI](https://newsapi.org/)
 * [Mapbox-GL](https://docs.mapbox.com/mapbox-gl-js/api/)
 * [React-Bootstrap](https://react-bootstrap.github.io/)
-
-## Deployed Link
-
-* [See Live Site]()
+* [React](https://reactjs.org/)
 
 ## Authors
 
 Abuye Mamuye
 
--[Link to Git Hub](https://github.com/AbuyeM1)
--[Link to LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)
+[Git Hub](https://github.com/AbuyeM1)
+[LinkedIn](https://www.linkedin.com/in/abuye-mamuye-5a49921b0/)
 
 William Bryan
 
--[Link to Git Hub](https://github.com/WeiLiBryan)
--[Link to LinkedIn](https://www.linkedin.com/in/coleman-buffa-0a12a5201/)
+[Git Hub](https://github.com/WeiLiBryan)
+[LinkedIn](https://www.linkedin.com/in/coleman-buffa-0a12a5201/)
 
 Spencer Christy
 
--[Link to Git Hub](https://github.com/spenrad)
--[Link to LinkedIn](https://www.linkedin.com/in/spencer-christy/)
-
-## Acknowledgments
-
-Many thanks to UCB Bootcamp Instructional and Support Staff
-
--[Stack Overflow](https://stackoverflow.com)
--[w3schools](https://w3schools.com)
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[Git Hub](https://github.com/spenrad)
+[LinkedIn](https://www.linkedin.com/in/spencer-christy/)
 
 ### [Back to Table of Contents](#table-of-contents) 

@@ -8,7 +8,6 @@ module.exports = {
       if (err) throw err;
       if (doc) res.send("User already exits");
       if (!doc) {
-        // const hashedPassword = await bcrypt.hash(req.body.password, 10);
         const newUser = new db.User({
           username: req.body.username,
           password: req.body.password,
@@ -30,8 +29,6 @@ module.exports = {
     )
       .then(function (data) {
         console.log("updated", data);
-        // db.User.save();
-        // console.log("db.User", db.User);
         res.json();
       })
       .catch((err) => res.status(422).json(err));

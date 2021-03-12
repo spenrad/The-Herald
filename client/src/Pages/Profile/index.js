@@ -24,7 +24,6 @@ function NewsFeed() {
     const search = (country) => {
         API.newsArticlesProfile(country).then((res) => {
             let data = res.data.articles;
-            // console.log(data);
             setArticles(data);
         });
     };

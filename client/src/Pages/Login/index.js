@@ -14,7 +14,6 @@ function Login() {
       username: loginUsername,
       password: loginPassword,
     }).then(() => {
-      // console.log("helllllo")
       history.push("/map");
     });
   };

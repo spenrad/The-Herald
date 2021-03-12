@@ -22,10 +22,8 @@ function Map( { articleSet, changeDisplayState, setCurrentCountry, date}) {
     minZoom: 2,
   });
 
-
-  
 const handleCountrySel = function (e) {
-    // console.log("e.features", e.features);
+    
     changeDisplayState(true);
     
     var countryName = e.features[0].properties.NAME;
@@ -34,15 +32,12 @@ const handleCountrySel = function (e) {
       return;
     }
     
-    //Subscribe(countryName);
     setCurrentCountry(countryName);
 
     // console.log("you clicked on ===>", countryName);
 
     API.newsArticles(countryName, date).then(function (res) {
-      // console.log("news articles", res.data.articles);
       let data = res.data.articles;
-      // console.log("ARTICLES DATA", data)
       articleSet(data);
     });
 
@@ -81,7 +76,6 @@ const handleCountrySel = function (e) {
 
   return (
     <div className="main">
-
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1Ijoic3BlbnJhZCIsImEiOiJja2x3bWZoc2EwMGFwMnVxa3NueXZmMHlnIn0.m_FPTC7C4JhyOtzp2KwcKg"
@@ -89,8 +83,8 @@ const handleCountrySel = function (e) {
         onViewportChange={(viewport) => {
           setViewport(viewport);
         }}
-        onClick={handleCountrySel}
-      >
+        onClick={handleCountrySel}>
+          
         <Source type="vector" url="mapbox://byfrost-articles.74qv0xp0">
           <Layer {...styleLayer} />
         </Source>
