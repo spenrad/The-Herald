@@ -6,13 +6,9 @@ export default {
       .post("/api/newsArticles", {search, date})
   },
 
-  newsArticlesProfile: function (search, date) {
-    return axios.get(
-      "https://newsapi.org/v2/everything?qInTitle=" +
-        search +
-        date +
-        "&language=en&sortBy=popularity&apiKey=0e220e65f7324225a3a82a01eef04123"
-    );
+  newsArticlesProfile: function (search) {
+    return axios
+      .post("/api/newsArticlesProfile", {search})
   },
 
   // NOTE: axios routes are for development only, add a ternary statement or update once in production
